@@ -1,0 +1,24 @@
+* Requirements
+   Python3
+
+* Installing
+** Python
+    https://www.python.org/downloads/windows/ から最新のPython3をダウンロード
+    画面の指示に従ってインストール
+    コマンドプロンプトを起動、コマンドプロンプト上で以下を実行
+    path=%PATH%;C:\Users\<Your UserName>\AppData\Local\Programs\Python\Python36-32\
+    python -m pip install --upgrade pip
+    python -m pip install requests
+
+** Script
+    添付している"google-translate.py"
+ 
+* Run
+    cd スクリプトの場所
+    python google-translate.py InputFile OutputFile
+
+* Comment
+    (Fig.1) や i.e. のようにピリオドで区切らない場合に対応していない
+    元の文章の requ-irements のように区切った文字を正常に認識しない場合がある。
+    ?が入ると上手く解釈してくれない場合がある
+    一文が長すぎると翻訳できない
